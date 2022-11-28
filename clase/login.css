@@ -1,0 +1,64 @@
+div#contenedorlogin {
+    width: 300px;
+    height: 300px;
+    border: solid #ebebeb;
+    border-radius: 20px;
+    margin-left: calc(50% - 150px);
+    margin-top: 150px;
+    padding-top: 27px;
+}
+
+body {
+    background: #a2b0bd;
+}
+
+input#email {
+    font-size: 20px;
+    font-style: italic;
+}
+
+input#password {
+    font-style: normal;
+    font-size: 10px;
+}
+
+.cajas {
+    width: 200px;
+    height: 31px;
+    margin-bottom: 9px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: calc( 50% - 116px);
+}
+
+div#btniniciar {
+    background: brown;
+    width: 150px;
+    text-align: center;
+    color: white;
+    height: 32px;
+    padding-top: 10px;
+    border-radius: 15px;
+    margin-left: calc( 50% - 75px);
+    font-size: 20px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+div#btniniciar {
+    background: brown;
+    width: 150px;
+    text-align: center;
+    color: white;
+    height: 32px;
+    padding-top: 10px;
+    border-radius: 15px;
+    margin-left: calc( 50% - 75px);
+    font-size: 20px;
+    font-style: italic;
+    cursor: pointer;
+}
+div#btniniciar:hover {
+    background: rgb(131, 88, 88);
+   
+}
