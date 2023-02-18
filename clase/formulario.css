@@ -1,0 +1,27 @@
+.miformulario {
+    width: 300px;
+    border: solid 1px black;
+    padding: 24px;
+    margin-left: calc(50% - 150px);
+    margin-top: 10%;
+    border-radius: 25px;
+    background: black;
+}
+
+div#misdatos {
+    border: solid 1px;
+    width: 500px;
+    text-align: center;
+    margin-left: calc(50% - 250px);
+    margin-top: 13px;
+}
+
+.item {
+    border: solid 1px #ebebeb;
+    padding-left: 19px;
+    cursor: pointer;
+}
+
+.nombre {
+    float: left;
+}

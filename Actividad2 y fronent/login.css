@@ -1,0 +1,6 @@
+div#mensaje {
+    position: relative;
+    margin-top: 6%;
+    padding: 20px;
+    border-radius: 15px;
+}

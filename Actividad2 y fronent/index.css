@@ -1,0 +1,125 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 650px;
+    line-height: 80px;
+    
+}
+h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+p{
+    font-size: 22;
+    color: beige;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+.topmargin-lg {
+    margin-top: 70px;
+}
+.topmargin-sm {
+    margin-top: 35px;
+}
+.topmargin-xs {
+    margin-top: 17.5px;
+}
+.navbar{
+    background-color: rgb(220, 220, 216);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    min-height: 70px;
+}
+
+.nav-link{
+    color: rgb(90, 88, 88);
+}
+.nav-link:hover{
+    color: black;
+}
+.logo-brand{
+    min-width: 100px;
+    max-width: 120px;
+}
+section#hero {
+    background-image: url(./fondo.jpg);
+    background-size: cover;
+    padding-top: 90px;
+    min-height: 700px;
+    color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.content-center{
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+.boton {
+    font-size: 14px;
+    padding: 15px 26px;
+    min-width: 160px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.boton-principal{
+    background-color: azure;
+    color: black;
+    border: 2px solid white;
+}
+.boton i {
+    font-size: 17px;
+    margin-left: 5px;
+}
+p#segundotxt {
+
+    color: black;
+}
+section{
+    padding: 120px 0px;
+}
+.portafolio-container{
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+.portafolio-detalle{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9000;
+}
+.portafolio-detalle a h2, .portafolio-detalle a p {
+    color: white;
+}
+.portafolio-detalle h2 {
+    margin-bottom: 0px;
+}
+.portafolio-container img{
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+}
+.portafolio-container:hover img{
+    transition: scale(1.2);
+    -moz-transition: scale(1.2);
+    -webkit-transition: scale(1.2);
+    transform: scale(1.2);
+}
+.footer{
+    color: black;
+    background-color: rgb(65, 65, 63);
+    
+}
+
+p#textoinicial {
+    font-weight: bold;
+    font-size: larger;
+}
+div#carouselExampleControls {
+    margin-top: 72px;
+}

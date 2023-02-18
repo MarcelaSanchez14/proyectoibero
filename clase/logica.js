@@ -117,9 +117,16 @@ var mostrar = function () {
  
  }
 }
+
 var desplazamiento = 0
 var mover = function () {
   var elemento = document.getElementById("item")
-  desplazamiento = desplazamiento +10
-  elemento.style.left = desplazamiento + "px"
-}
+  
+    setinterval(()=> {
+    desplazamiento++
+    elemento.style.left = desplazamiento + "px"
+  },50)
+  } 
+  
+
+

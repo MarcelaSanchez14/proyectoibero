@@ -1,0 +1,43 @@
+.miformulario {
+    width: 300px;
+    border: solid 1px black;
+    padding: 24px;
+    margin-left: calc(50% - 150px);
+    margin-top: 10%;
+    border-radius: 25px;
+    background: #ebebeb;
+}
+
+div#misdatos {
+    border: solid 1px;
+    width: 500px;
+    text-align: center;
+    margin-left: calc(50% - 250px);
+    margin-top: 13px;
+}
+
+.item {
+    border: solid 1px #ebebeb;
+    padding-left: 19px;
+    cursor: pointer;
+}
+
+.nombre {
+    float: left;
+}
+.navbar{
+    background-color: rgb(220, 220, 216);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    min-height: 70px;
+}
+
+.nav-link{
+    color: rgb(90, 88, 88);
+}
+.nav-link:hover{
+    color: black;
+}
+.logo-brand{
+    min-width: 100px;
+    max-width: 120px;
+}

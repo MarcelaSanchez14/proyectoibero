@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    function peticion(post, callback) {
+
+
+      var xhr = new XMLHttpRequest();
+      xhr.withCredentials = true;
+
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === 4) {
+          return callback(this.responseText)
+        }
+      });
+
+
+      xhr.open(post.tipo, post.host + post.path); //endpoint
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); //header cabecera
+
+      xhr.send(post.payload);
+
+    }
+
+    function Guardar() {
+
+      var cedula = document.getElementById("cedula").value
+      var edad = document.getElementById("edad").value
+      var name = document.getElementById("name").value
+      var apellido = document.getElementById("apellido").value
+      var direccion = document.getElementById("direccion").value
+      var ecivil = document.getElementById("ecivil").value
+      var telefono = document.getElementById("telefono").value
+
+
+      var data = "name= " + name + " &edad=" + edad + " &cedula= " + cedula + " &apellido=" + apellido + "&direccion=" + direccion + "&telefono=" + telefono + "&ecivil=" + ecivil + "";
+
+      var post = {
+        tipo: "POST",
+        host: "http://localhost:3000",
+        path:  "/usuarios/Guardar",
+        payload:data  
+      }
+
+      peticion(post, function (respuesta) {
+        console.log(respuesta)
+
+      })
+
+
+    }
+    function Listar() {
+
+      var post = {
+        tipo: "POST",
+        host: "http://localhost:3000",
+        path:  "/usuarios/listarusuarios",
+        payload:null  
+      }
+
+      peticion(post, function (respuesta) {
+        console.log(respuesta)
+
+      })
+
+
+    }
+
+    function modificar(){
+
+      var cedula = document.getElementById("cedula").value
+      var edad = document.getElementById("edad").value
+      var name = document.getElementById("name").value
+      var apellido = document.getElementById("apellido").value
+      var direccion = document.getElementById("direccion").value
+      var ecivil = document.getElementById("ecivil").value
+      var telefono = document.getElementById("telefono").value
+
+      var data = "name= " + name + " &edad=" + edad + " &cedula= " + cedula + " &apellido=" + apellido + "&direccion=" + direccion + "&telefono=" + telefono + "&ecivil=" + ecivil + "";
+
+      var post = {
+        tipo: "POST",
+        host: "http://localhost:3000",
+        path:  "/usuarios/ActualizarPorCedula",
+        payload:data  
+      }
+
+      peticion(post, function (respuesta) {
+        console.log(respuesta)
+
+      })
+      
+    }
+
+    function eliminar (){
+      var cedula = document.getElementById("cedula").value
+      var data = `cedula=${cedula}`;
+     
+      var post = {
+        tipo: "POST",
+        host: "http://localhost:3000",
+        path:  "/usuarios/BorrarPorCedula",
+        payload:data  
+      }
+
+      peticion(post, function (respuesta) {
+        console.log(respuesta)
+
+      })
+
+    }
+
+    
+
+
+  </script>
+  Hola Mundo
+
+  <input type="text" id="cedula" placeholder="cedula">
+  <input type="text" id="name" placeholder="name">
+  <input type="text" id="apellido" placeholder="apellido">
+  <input type="text" id="edad" placeholder="edad">
+  <input type="text" id="telefono" placeholder="telefono">
+  <input type="text" id="direccion" placeholder="direccion">
+  <input type="text" id="ecivil" placeholder="e civil">
+
+  <div onclick="Guardar()"> Guardar</div>
+  <div onclick="Listar()"> Listar</div>
+  <div onclick="modificar()"> Modificar</div>
+  <div onclick="eliminar()"> Borrar</div>
+
+</body>
+
+</html>

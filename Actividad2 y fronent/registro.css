@@ -1,0 +1,9 @@
+div#cajaentrada {
+   
+    margin-top: 15%;
+    width: 300px;
+    border: solid 1px #ebebed;
+    padding: 20px;
+    margin-left: calc(50% - 150px);
+    border-radius: 15px;
+} 
